@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+      font-family: Arial;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #000;
+    }
+    h1 {
+      position: relative;
+      letter-spacing: 15px;
+      text-transform: uppercase;
+      /* text-aligh: center; */
+      line-height: 0.7em;
+      font-size: 90px;
+      color: #e42474;
+      outline: none;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+      animation: animate 5s linear infinite;
+    }
+    @keyframes animate {
+      0%,
+      21%,
+      51%,
+      60%,
+      90% {
+        color: #0e3742;
+      }
+      20%,
+      30%,
+      50%,
+      80%,
+      100% {
+        color: #fff;
+        text-shadow: 0 0 10px #e42474 0 0 20px #e42474 0 0 30px #e42474 0 0 40px
+          #e42474;
+      }
+    }
+  </style>
+  <body>
+    <h1 contenteditable="true">hello world</h1>
+  </body>
+</html>
